@@ -9,8 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                LottieView(fileName: "loading")
+                    .frame(width: 250, height: 250, alignment: .center)
+                
+                
+                LottieView(fileName: "loading2")
+                    .frame(width: 400, height: 400, alignment: .center)
+                
+            }
+            .navigationTitle("SwiftUI Lottie")
+        }
     }
 }
 
